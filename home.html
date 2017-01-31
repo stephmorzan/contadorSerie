@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="../MorzanContador/dist/css/foundation.css">
+    <link rel="stylesheet" href="../MorzanContador/dist/css/foundation.min.css">
+</head>
+<body>
+
+<div class="row">
+    <div class="large-12 columns text-center">
+        <h1>Ordenador de serie</h1>
+    </div>
+    <br>
+    <br>
+</div>
+
+<div class="row">
+    <div class="large-6 medium-6 columns text-center">
+        <h4>Ingrese un número:</h4>
+    </div>
+    <form>
+
+            <div class="large-4 medium-4 columns text-center">
+                <input type="number" name="numero" id="numero" placeholder="Digite un número">
+            </div>
+
+    </form>
+
+    <div class="row">
+        <div class="large-4 medium-4 columns text-center botones">
+            <a class="button" name="agregar" onclick="agregarALista()">Añadir número</a>
+        </div>
+        <div class="large-4 medium-4 columns text-center botones">
+            <a class="button" name="mostrar">Desplegar lista</a>
+        </div>
+        <div class="large-4 medium-4 columns text-center botones">
+            <a class="button" name="limpiar">Limpiar lista</a>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="large-12 medium-12 columns">
+            <span>
+                <p id="listado"></p>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+    function agregarALista() {
+        var num;
+        num = document.getElementById("numero").value;
+        var lista = [];
+        lista.push(num);
+        console.log(num);
+        document.getElementById("listado").innerHTML=num +" \t";
+    }
+
+
+    function fusion(number){
+
+    }
+
+</script>
+
+</body>
+</html>
